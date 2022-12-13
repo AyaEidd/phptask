@@ -97,7 +97,13 @@ echo $details;
 echo "<br>";
 echo $gender;
 echo "<br>";
-echo $courses;
+if(!empty($_GET["courses"]))
+        {
+echo "Your courses are :" ;         
+foreach ($_GET['courses'] as $courses)
+echo " $courses";  
+        }
+
 
 ?>
 
